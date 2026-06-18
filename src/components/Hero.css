@@ -81,6 +81,14 @@
   color: var(--bg-cream); /* Alterado para cor clara conforme solicitado */
 }
 
+.scroll-indicator {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.8;
+}
+
 @media (min-width: 768px) {
   .hero {
     padding: 4rem 0;

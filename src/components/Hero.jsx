@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { ChevronDown } from 'lucide-react';
 import './Hero.css';
 
 const Hero = () => {
@@ -22,6 +23,14 @@ const Hero = () => {
           <a href="https://wa.me/553497192116?text=Ol%C3%A1%2C%20vim%20do%20site%20e%20gostaria%20de%20fazer%20um%20pedido." target="_blank" rel="noopener noreferrer" className="btn-primary hero-btn">
             Pedir meu Pudim agora 🤍
           </a>
+
+          <motion.div 
+            className="scroll-indicator"
+            animate={{ y: [0, 10, 0] }}
+            transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
+          >
+            <ChevronDown size={36} color="var(--bg-cream)" />
+          </motion.div>
         </motion.div>
       </div>
     </section>
