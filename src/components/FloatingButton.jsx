@@ -4,7 +4,7 @@ import './FloatingButton.css';
 const FloatingButton = () => {
   return (
     <a 
-      href="https://wa.me/553497192116" 
+      href="https://wa.me/553497192116?text=Ol%C3%A1%2C%20vim%20do%20site%20e%20gostaria%20de%20fazer%20um%20pedido." 
       className="fab-container" 
       target="_blank" 
       rel="noopener noreferrer"

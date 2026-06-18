@@ -19,7 +19,7 @@ const Hero = () => {
           <p className="subheadline">
             Feito com carinho e ingredientes selecionados. O verdadeiro sabor de receita de mãe, pertinho de você.
           </p>
-          <a href="https://wa.me/553497192116" className="btn-primary hero-btn" target="_blank" rel="noopener noreferrer">
+          <a href="https://wa.me/553497192116?text=Ol%C3%A1%2C%20vim%20do%20site%20e%20gostaria%20de%20fazer%20um%20pedido." target="_blank" rel="noopener noreferrer" className="btn-primary hero-btn">
             Pedir meu Pudim agora 🤍
           </a>
         </motion.div>
