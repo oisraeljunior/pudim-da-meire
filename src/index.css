@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400;500;600;700;800&family=Montserrat:wght@400;500;600;700&display=swap');
+
+:root {
+  --bg-cream: #FAF8F5;
+  --bg-cream-dark: #F5F2EC;
+  --primary-pink: #dcaaa1;
+  --primary-caramel: #9a601d;
+  --text-dark: #333333;
+  
+  --font-heading: 'Baloo Thambi 2', cursive;
+  --font-body: 'Montserrat', sans-serif;
+  
+  --border-radius-pudim: 24px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-cream);
+  color: var(--text-dark);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--primary-caramel);
+  line-height: 1.2;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Utilities */
+.btn-primary {
+  display: inline-block;
+  background-color: var(--primary-pink);
+  color: var(--primary-caramel);
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 1.125rem;
+  padding: 1rem 2rem;
+  border-radius: var(--border-radius-pudim);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(220, 170, 161, 0.2);
+}
+
+@media (min-width: 768px) {
+  .btn-primary:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(220, 170, 161, 0.4);
+  }
+}
+
+.text-pink { color: var(--primary-pink); }
+.text-caramel { color: var(--primary-caramel); }
+.bg-cream { background-color: var(--bg-cream); }
+.bg-cream-dark { background-color: var(--bg-cream-dark); }
+.bg-pink { background-color: var(--primary-pink); }
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+section {
+  padding: 5rem 0;
+}
+
+@media (min-width: 768px) {
+  section {
+    padding: 8rem 0;
+  }
+}

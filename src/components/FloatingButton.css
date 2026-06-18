@@ -1,0 +1,39 @@
+.fab-container {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 100;
+  animation: pulse-fab 5s infinite;
+}
+
+.fab {
+  background-color: var(--primary-pink); /* Alterado para rosa padrão */
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 15px rgba(220, 170, 161, 0.6);
+  transition: transform 0.3s ease;
+}
+
+.fab-container:hover .fab {
+  transform: scale(1.1);
+}
+
+@keyframes pulse-fab {
+  0% { transform: scale(1); }
+  5% { transform: scale(1.1); }
+  10% { transform: scale(1); }
+  15% { transform: scale(1.1); }
+  20% { transform: scale(1); }
+  100% { transform: scale(1); }
+}
+
+@media (max-width: 768px) {
+  .fab-container {
+    bottom: 1.5rem;
+    right: 1.5rem;
+  }
+}
