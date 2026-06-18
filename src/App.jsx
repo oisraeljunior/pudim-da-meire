@@ -10,10 +10,12 @@ function App() {
   return (
     <>
       <Hero />
-      <Menu />
-      <HowToEnjoy />
-      <SocialProof />
-      <Footer />
+      <div style={{ overflowX: 'hidden', position: 'relative', zIndex: 1, backgroundColor: 'var(--bg-cream)' }}>
+        <Menu />
+        <HowToEnjoy />
+        <SocialProof />
+        <Footer />
+      </div>
       <FloatingButton />
     </>
   );
