@@ -20,7 +20,7 @@ const HowToEnjoy = () => {
             transition={{ duration: 0.6, ease: "easeOut" }}
           >
             <div className="enjoy-image-placeholder">
-              <img src="/retirada.webp" alt="Serviço de Retirada" />
+              <img src="/retirada.webp" alt="Serviço de Retirada" width="400" height="220" loading="lazy" />
             </div>
             <div className="enjoy-text">
               <h3>Para Retirada</h3>
@@ -36,7 +36,7 @@ const HowToEnjoy = () => {
             transition={{ duration: 0.6, ease: "easeOut" }}
           >
             <div className="enjoy-image-placeholder">
-              <img src="/parceiros.webp" alt="Para Parceiros" />
+              <img src="/parceiros.webp" alt="Para Parceiros" width="400" height="220" loading="lazy" />
             </div>
             <div className="enjoy-text">
               <h3>Para Parceiros</h3>
@@ -52,7 +52,7 @@ const HowToEnjoy = () => {
             transition={{ duration: 0.6, ease: "easeOut" }}
           >
             <div className="enjoy-image-placeholder">
-              <img src="/eventos.webp" alt="Para Eventos" />
+              <img src="/eventos.webp" alt="Para Eventos" width="400" height="220" loading="lazy" />
             </div>
             <div className="enjoy-text">
               <h3>Para Eventos</h3>

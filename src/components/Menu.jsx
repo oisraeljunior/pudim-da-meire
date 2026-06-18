@@ -35,7 +35,7 @@ const Menu = () => {
         >
           <motion.div className="menu-card" variants={cardVariants}>
             <div className="card-image-placeholder">
-              <img src="/tradicional.webp" alt="Pudim Tradicional" />
+              <img src="/tradicional.webp" alt="Pudim Tradicional" width="400" height="220" loading="lazy" />
             </div>
             <div className="card-content">
               <h3>Mini Pudim Tradicional</h3>
@@ -45,7 +45,7 @@ const Menu = () => {
           
           <motion.div className="menu-card" variants={cardVariants}>
             <div className="card-image-placeholder">
-              <img src="/abacaxi.webp" alt="Pudim Abacaxi" />
+              <img src="/abacaxi.webp" alt="Pudim Abacaxi" width="400" height="220" loading="lazy" />
             </div>
             <div className="card-content">
               <h3>Com Calda de Abacaxi</h3>
@@ -55,7 +55,7 @@ const Menu = () => {
           
           <motion.div className="menu-card" variants={cardVariants}>
             <div className="card-image-placeholder">
-              <img src="/maracuja.webp" alt="Pudim Maracujá" />
+              <img src="/maracuja.webp" alt="Pudim Maracujá" width="400" height="220" loading="lazy" />
             </div>
             <div className="card-content">
               <h3>Com Calda de Maracujá</h3>

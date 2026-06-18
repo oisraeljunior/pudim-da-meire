@@ -13,9 +13,9 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <img src="/logo.png" alt="Pudim da Meire" className="hero-logo" />
+          <img src="/logo.png" alt="Pudim da Meire" className="hero-logo" width="140" height="54" />
           <span className="slogan">Doçura que acolhe.</span>
-          <h1>Mais que um doce, um abraço em forma de pudim.</h1>
+          <h1>Mais que um doce,<br/>um abraço em<br/>forma de pudim.</h1>
           <p className="subheadline">
             Feito com carinho e ingredientes selecionados. O verdadeiro sabor de receita de mãe, pertinho de você.
           </p>
