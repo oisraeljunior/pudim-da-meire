@@ -1,20 +1,23 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import Hero from './components/Hero';
-import Menu from './components/Menu';
-import HowToEnjoy from './components/HowToEnjoy';
-import SocialProof from './components/SocialProof';
-import Footer from './components/Footer';
 import FloatingButton from './components/FloatingButton';
+
+const Menu = React.lazy(() => import('./components/Menu'));
+const HowToEnjoy = React.lazy(() => import('./components/HowToEnjoy'));
+const SocialProof = React.lazy(() => import('./components/SocialProof'));
+const Footer = React.lazy(() => import('./components/Footer'));
 
 function App() {
   return (
     <>
       <Hero />
       <div style={{ overflowX: 'hidden', position: 'relative', zIndex: 1, backgroundColor: 'var(--bg-cream)' }}>
-        <Menu />
-        <HowToEnjoy />
-        <SocialProof />
-        <Footer />
+        <Suspense fallback={<div>Carregando...</div>}>
+          <Menu />
+          <HowToEnjoy />
+          <SocialProof />
+          <Footer />
+        </Suspense>
       </div>
       <FloatingButton />
     </>
